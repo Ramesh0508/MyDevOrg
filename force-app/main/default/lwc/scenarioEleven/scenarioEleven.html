@@ -1,0 +1,14 @@
+<template>
+     <lightning-card title="Personal Information">
+        <template for:each={details} for:item="detail">
+            <div key={detail.Id} class="slds-p-left_large">
+            <strong>Name : </strong> {detail.Name}<br/>
+            <strong> Email : </strong> {detail.Email}<br>
+            <strong> Phone : </strong> {detail.Phone}<br>
+            <strong> Address : </strong>{detail.Address} <br>
+            <strong> Website : </strong> {detail.Website} <br>
+            <strong> Telegram : </strong> {detail.Telegram} <br>
+            </div>
+        </template>
+</lightning-card>
+</template>
