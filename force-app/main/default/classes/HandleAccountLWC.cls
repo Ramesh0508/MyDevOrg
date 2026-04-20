@@ -3,6 +3,5 @@ public class HandleAccountLWC {
     public static List<Contact> FetchContact(){
         List <Contact> conlist =[SELECT Id,Name,Phone,Email,MailingAddress FROM Contact WHERE FirstName='Ramesh'];
      return conlist;
-    }
-   
+    } 
 }
