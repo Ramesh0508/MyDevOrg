@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="JS Service Component" icon-name="standard:datadotcom">
+        Value from Default Export: {valDefault}
+
+        <ul class="slds-m-around_medium">
+            <template for:each={valNamed} for:item="v">
+                <li key={v.Id}>
+                    {v.label}, {v.value}</li>
+            </template>
+        </ul>
+        Simple Interest = {si}
+    </lightning-card>
+</template>
