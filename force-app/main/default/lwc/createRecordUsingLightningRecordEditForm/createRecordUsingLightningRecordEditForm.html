@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Create A Record using Lightning Record Edit Form">
+        <lightning-record-edit-form object-api-name={contactObject} onsuccess={handleSuccess}>
+            <lightning-messages></lightning-messages>
+            <div class="slds-grid">
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-input-field field-name={accountId}></lightning-input-field>
+                      <lightning-input-field field-name={firstName}></lightning-input-field>
+                      <lightning-input-field field-name={lastName}></lightning-input-field>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-input-field field-name={phone}></lightning-input-field>
+                    <lightning-input-field field-name={email}></lightning-input-field>
+                </div>
+            </div>
+            <lightning-button  type="submit" variant="brand" label="Create Contact"></lightning-button>
+        </lightning-record-edit-form>   
+    </lightning-card>
+</template>
