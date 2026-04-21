@@ -14,8 +14,7 @@ export default class CreateLightningRecordForm extends LightningElement {
             new ShowToastEvent({
             title: 'Record is created successfully',
             message: event.detail.message,
-            variant: 'success',
-        }),
-    );    
+            variant: 'success'
+        }));    
     }   
 }
