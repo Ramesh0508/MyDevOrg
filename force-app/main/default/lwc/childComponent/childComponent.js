@@ -13,4 +13,7 @@ export default class ChildComponent extends LightningElement {
     set lastName(value) {
         this.lowercaseLastName = value.toLowerCase();
     }
+    connectedCallback() {
+       // throw new Error('Whoops!');
+    }
 }

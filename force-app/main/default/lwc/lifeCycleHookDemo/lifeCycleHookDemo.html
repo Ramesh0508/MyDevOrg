@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Life Cycle Hook Demo" icon-name="custom:custom63">
+    {test}!
+    <div if:false={ready}>Loading...</div>
+    <div if:true={ready}>
+        <div>Name: {name}</div>
+        <div>Price: {price}</div>
+    </div>
+    <div if:true={rendered}>Component Successfully Rendered</div>
+    </lightning-card>
+</template>
